@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <head th:fragment="head-fragment">
+        <meta charset="utf-8">
+        <title>CHYBooK</title>
+       <link rel="stylesheet" th:href="@{common/css/bootstrap.min.css}">
+        <link rel="stylesheet" th:href="@{user/css/style.css}">
+
+        <script th:src="@{common/js/jquery-3.7.1.min.js}"></script>
+        <script th:src="@{common/js/bootstrap.bundle.min.js}"></script>
+        <script th:src="@{user/js/user_common.js}"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+</head>
+<body>
+<header th:fragment="header-fragment">
+    <div class="row d-flex align-items-center">
+        <div class="col-4">
+            <h4><label class="logo badge badge-primary">ChyBooK</label></h4>
+        </div>
+        <div class="col-4"></div>
+        <div class="col-4 search-area">
+            <div class="form-group search-form">
+                <input type="text" placeholder="标题 作者 ISBN ……" class="search-input">
+                <button class="search-btn btn btn-info">搜 索</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav class="row nav navbar" th:fragment="nav-fragment">
+    <div class="col-md-2 navbar-brand nav-item" th:href="@{/index.html}">ChyBook</div>
+    <div class="col-md-2 navbar-toggler nav-item" th:href="@{/index.html}">首页</div>
+    <div class="col-md-2 navbar-toggler nav-item" th:href="@{/books}">书城</div>
+    <div class="col-md-2 navbar-toggler nav-item" th:href="@{/bookshelf}">书架</div>
+    <div class="col-md-2 navbar-toggler nav-item" th:href="@{/personal}">个人中心</div>
+</nav>
+
+
+</body>
+</html>

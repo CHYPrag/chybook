@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-cn" xmlns:th="www.thymeleaf.org/">
+<head th:insert="user/header::head-fragment">
+    <meta charset="UTF-8">
+    <!--    <title>CHYBooK - 在线图书阅读</title>-->
+</head>
+<body>
+<div class="container">
+    <div th:replace="user/header::header-fragment"></div>
+    <div th:replace="user/header::nav-fragment"></div>
+
+    <div class="row">
+        <div class="col-8">
+           <div class="form-group list-group">
+                <div class="row list-group-item">
+                    <label>昵称</label>
+                    <input type="text" class="form-control" name="name" th:value="${session.user.name}" readonly="readonly"/>
+                </div>
+               <div class="list-group-item">
+                   <div class="form-check">
+                       <span class="col-5">
+                           <input name="sex" type="radio" class="form-check-input" placeholder="性别" value="男">男
+                       </span>
+                       <span class="col-2"></span>
+                       <span class="col-5">
+                           <input name="sex" type="radio" class="form-check-input" placeholder="性别" value="女">女
+                       </span>
+                   </div>
+               </div>
+               <div class="list-group-item">
+                   <label>年龄</label>
+                   <input type="number" class="form-control" name="age" th:value="${session.user.age}" readonly="readonly"/>
+               </div>
+               <div class="list-group-item">
+                   <label>手机号码</label>
+                   <input type="text" class="form-control" name="phone" th:value="${session.user.phone}" readonly="readonly"/>
+               </div>
+               <div class="list-group-item">
+                   <label>住址</label>
+                   <input type="text" class="form-control" name="address" th:value="${session.user.address}" readonly="readonly"/>
+               </div>
+               <div class="list-group-item">
+                   <label>VIP级别</label>
+                   <span th:text="${session.user.is_vip}"></span>
+               </div>
+               <div class="list-group-item">
+                   <label>兴趣领域</label>
+                   <ul class="list-group"></ul>
+                   <div hidden="hidden" id="interst_fields_div">
+                       <div class="dropdown">
+                           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               请选择你的兴趣领域
+                           </button>
+                           <div id="insert_fields_list" class="dropdown-menu" aria-labelledby="dropdownMenuButton"></div>
+                       </div>
+                   </div>
+               </div>
+<!--               <div class="list-item">-->
+<!--               </div>-->
+           </div>
+        </div>
+        <div class="col-4">
+            <div class="row card">
+                <div class="card-header">
+                    <span>头像</span>
+                </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <img th:src="${session.user.img}" class="img-thumbnail" style="width: 100px;height: 100px;"/>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="row card">
+                <div class="card-header"></div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>阅读时长</label>
+                            <span th:text="${session.user.read_time}"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <label>累积阅读书籍总数</label>
+                            <span th:text="${session.user.read_book_sum}"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>读完书籍数</label>
+                            <span th:text="${session.user.read_book_complete}"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <label>关注数</label>
+                            <span th:text="${session.user.concern_sum}"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>点赞数</label>
+                            <span th:text="${session.user.likes_sum}"></span>
+                        </div>
+                        <div class="col-md-6">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div th:replace="user/footer::footer-fragment"></div>
+</div>
+</body>
+</html>

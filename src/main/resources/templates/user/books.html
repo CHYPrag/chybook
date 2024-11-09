@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="/user/header::head-fragment">
+    <meta charset="UTF-8">
+    <title>chyBook - 书城</title>
+</head>
+<body>
+    <div class="container">
+        <div th:replace="/user/header::header-fragment"></div>
+        <div th:replace="/user/header::nav-fragment"></div>
+        <div class="ctx">
+            <div class="pick-conditions">
+                <div></div><!-- 分类 -->
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="book-list"></div>
+        </div>
+        <div th:replace="/user/footer::footer-fragment"></div>
+    </div>
+</body>
+</html>

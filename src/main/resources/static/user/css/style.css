@@ -1,0 +1,33 @@
+
+body{
+    background: #e4dede;
+}
+.logo{
+    backdrop-color: #02BCFFFF;
+    font-color: black;
+    font-family: "Times New Roman";
+}
+.search-btn{
+background-color: #02BCFFFF;
+}
+.nav{
+    align-content: center;
+    text-align: center;
+}
+.nav-item{
+    text-align: center;
+    background: #02bcff;
+    border: 1px solid white;
+    color: black;
+}
+.subitem{
+    align-content: center;
+    text-align: center;
+    border: 3px solid #6e6767;
+}
+.footer{
+    text-align: center;
+    background: #6e6767;
+    font-weight: bold;
+    color: white;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.chy.chybook.dao.ShelfMapper">
+    <select id="selectBy" parameterType="org.chy.chybook.entity.Shelf" resultType="org.chy.chybook.entity.Shelf">
+        select * from Shelf
+        <where>
+            <if test="uid != null and uid != ''">
+                uid = #{uid}
+            </if>
+            <if test="bid != null and bid != ''">
+            and bid = #{bid}
+            </if>
+        </where>
+    </select>
+</mapper>

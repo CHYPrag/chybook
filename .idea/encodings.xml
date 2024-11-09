@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/booksystem-schema.sql" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/docs/需求分析.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/chy/chybook/Configuration.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/audio" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/common/css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/common/css/bootstrap.min.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/common/js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/common/js/bootstrap.bundle.min.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/common/js/jquery-1.8.0.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/favicon.ico" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/fonts" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/style.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/user/css/style.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/user/img" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/user/js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/404.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/about.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/blog-details.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/blog.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/cart.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/checkout.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/contact.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/index-2.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/index-3.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/index-4.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/index-5.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/index-6.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/index.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/login.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/moreclick.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/product-details.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/register.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/shop.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/user/index.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/wishlist.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/org/chy/chybook/mapper/UserMapperTest.java" charset="GBK" />
+  </component>
+</project>

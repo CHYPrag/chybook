@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-cn" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>chybook -- 注册</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-5 left">
+            <img th:src="@{img/login.png}">
+        </div>
+        <div class="col-5 right card">
+            <div class="card-header">
+                <label>用户注册</label>
+                <span>已有账号？<a th:href="@{/login}">登录</a></span>
+            </div>
+            <div class="form-group card-body">
+                <div class="user-name">
+                    <span>用户名：</span>
+                    <input type="text" name="name" class="form-control">
+                </div>
+                <div class="user-sex">
+                    <span>性别：</span>
+                    <input type="text" name="sex" class="form-control">
+                </div>
+                <div class="user-age">
+                    <span>年龄：</span>
+                    <input type="text" name="age" class="form-control">
+                </div>
+                <div class="user-phone">
+                    <span>电话：</span>
+                    <input type="text" name="phone" class="form-control">
+                </div>
+                <div class="user-address">
+                    <span>住址：</span>
+                    <input type="text" name="address" class="form-control">
+                </div>
+
+                <div class="user-password">
+                    <span>密码：</span>
+                    <input type="password" name="password" class="form-control">
+                </div>
+                <div class="user-confirm-password">
+                    <span>确认密码：</span>
+                    <input type="password" name="password" class="form-control">
+                </div>
+                <div class="verifycode">
+                    <span>验证码：</span>
+                    <input type="text" name="verifycode" class="form-control">
+                    <span>
+                        <img th:src="@{/login_verifycode}" class="verify-img">
+                    </span>
+                </div>
+                <input type="hidden" value="register">
+                <button class="btn btn-primary submit" style="color: skyblue">注册</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
