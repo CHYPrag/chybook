@@ -1,13 +1,9 @@
 package org.chy.chybook.controller.user;
 
 import jakarta.servlet.http.HttpSession;
-import org.chy.chybook.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.chy.chybook.entity.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.chy.chybook.entity.User;
-
-import java.util.List;
 
 /**
  * @author CHY

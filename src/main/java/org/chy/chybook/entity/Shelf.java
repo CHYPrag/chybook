@@ -1,8 +1,8 @@
 package org.chy.chybook.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.github.jeffreyning.mybatisplus.anno.MppMultiId;
-import jakarta.persistence.*;
 import lombok.Data;
 
 /**
@@ -12,8 +12,10 @@ import lombok.Data;
 @Data
 @TableName("Shelf")
 public class Shelf {
-    @MppMultiId("uid")
+    @MppMultiId
+    @TableField("uid")
     private String uid;
-   @MppMultiId("bid")
+   @MppMultiId
+   @TableField("bid")
     private String bid;
 }

@@ -1,10 +1,7 @@
 package org.chy.chybook.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -19,6 +16,7 @@ public class User {
     /**
      * 用户ID作为唯一标识
      */
+    @TableId
     private String uid;
     /**
      * 通常是单向加密（通常是加了盐又反复几次的）后的
@@ -38,8 +36,7 @@ public class User {
     /**
      * 标识用户是否被锁定：0(unlocked),1(locked)
      */
-    @Column(name = "is_lock")
-    private Boolean is_locked;
+    private Boolean is_lock;
     /**
      * 标识用户的VIP级别：0(无)1(vip)
      */

@@ -4,8 +4,6 @@ spring:
     url: jdbc:mysql://localhost:3306/bookstore?useSSl=false
     username: root
     password: "000000"
-mybatis:
-  mapper-locations=classpath:mapper/*Mapper.xml
 chybook:
   upload: # 从数据库查询到的都是相对路径，需要加上配置文件中前缀
     coverImg: "D:\\upload\\coverImg\\"# 图书封面图片上传存放路径

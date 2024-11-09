@@ -2,8 +2,7 @@ package org.chy.chybook.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.github.jeffreyning.mybatisplus.anno.MppMultiId;
-import jakarta.persistence.*;
-import lombok.*;
+import lombok.Data;
 
 import java.io.Serializable;
 

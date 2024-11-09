@@ -2,10 +2,6 @@ package org.chy.chybook.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.github.jeffreyning.mybatisplus.anno.MppMultiId;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.IdClass;
-import jakarta.persistence.Table;
 import lombok.Data;
 
 import java.time.LocalDateTime;

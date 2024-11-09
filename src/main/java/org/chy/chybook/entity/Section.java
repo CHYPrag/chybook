@@ -1,9 +1,7 @@
 package org.chy.chybook.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 import lombok.Data;
 
 /**
@@ -16,6 +14,7 @@ public class Section {
     /**
      * 图书节ID
      */
+    @TableId
     private String secid;
     private String chid;
     private Integer sectioon;

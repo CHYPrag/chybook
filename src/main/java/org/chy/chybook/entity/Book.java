@@ -1,11 +1,8 @@
 package org.chy.chybook.entity;
 
-import com.github.jeffreyning.mybatisplus.anno.MppMultiId;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-import lombok.Data;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 import java.time.LocalDateTime;
 
@@ -16,7 +13,8 @@ import java.time.LocalDateTime;
 @Data
 @TableName("Book")
 public class Book {
-    private String id;
+    @TableId
+    private String bid;
     private String name;
     /**
      * 作者，以英文逗号分割

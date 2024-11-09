@@ -1,9 +1,7 @@
 package org.chy.chybook.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 import lombok.Data;
 
 /**
@@ -13,6 +11,7 @@ import lombok.Data;
 @Data
 @TableName( "img_per_chapter")
 public class ImgPerChapter {
+    @TableId
     private String imgid;
     private String chid;
     /**
