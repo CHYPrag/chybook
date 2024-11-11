@@ -8,6 +8,10 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 
 @SpringBootTest
 class ShelfMapperTest {
@@ -22,6 +26,9 @@ class ShelfMapperTest {
     @AfterEach
     void tearDown() {
     }
+    /*
+    注意编码问题
+     */
     @Test
     public void selectById(){
         Shelf shelf = new Shelf();
@@ -30,6 +37,20 @@ class ShelfMapperTest {
         Shelf book = shelfMapper.selectByMultiId(shelf);
         Assertions.assertNotNull(book);
         System.out.println(book);
+    }
+
+    @Test
+    public void selectByMap(){
+        Map<String,Object> map=new HashMap<>();
+        map.put("uid","小亮");
+        List<Shelf> books = shelfMapper.selectByMap(map);
+        Assertions.assertNotNull(books);
+        Assertions.assertFalse(books.isEmpty());
+        for (Shelf book : books) {
+            Assertions.assertNotNull(book);
+            Assertions.assertEquals(book.getUid(),"小亮");
+            System.out.println(book);
+        }
     }
 
 }
