@@ -25,7 +25,7 @@ class ShelfMapperTest {
     @Test
     public void selectById(){
         Shelf shelf = new Shelf();
-        shelf.setUid("–°¡¡");
+        shelf.setUid("Â∞è‰∫Æ");
         shelf.setBid("b001");
         Shelf book = shelfMapper.selectByMultiId(shelf);
         Assertions.assertNotNull(book);
