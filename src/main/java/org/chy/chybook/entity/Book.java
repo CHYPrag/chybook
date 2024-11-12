@@ -72,7 +72,7 @@ public class Book {
     /**
      * 图书评分(1--10)
      */
-    private Float score;
+    private volatile Float score;
     private LocalDateTime create_datetime;
     private LocalDateTime update_date;
 }

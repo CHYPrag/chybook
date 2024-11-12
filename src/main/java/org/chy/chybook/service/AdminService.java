@@ -8,7 +8,13 @@ import org.chy.chybook.entity.Admin;
  * @since 2024-11-01
  */
 public interface AdminService {
-    public void login(String id,String password,String verifyCode,HttpSession session);
-    public void register(HttpSession session);
-    public void logout(HttpSession session);
+    /**
+     *
+     * @param id
+     * @param password
+     * @param verifyCode
+     * @return -- {@link org.chy.chybook.common.Contants}中的字段
+     */
+    public int login(String id,String password,String verifyCode);
+    public void resetPassword(String uid,String oldPassword,String newPassword);
 }

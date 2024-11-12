@@ -6,7 +6,7 @@ import org.springframework.boot.SpringBootConfiguration;
  * @author CHY
  * @since 2024-11-01
  */
-//@SpringBootConfiguration
+@SpringBootConfiguration
 public class CHYConfig {
 
 }

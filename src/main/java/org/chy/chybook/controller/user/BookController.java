@@ -7,5 +7,6 @@ import org.springframework.stereotype.Controller;
  * @since 2024-11-01
  */
 @Controller
-public class ReadBookController {
+public class BookController {
+
 }

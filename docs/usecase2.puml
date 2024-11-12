@@ -1,0 +1,30 @@
+@startuml
+actor :管理员: as admin
+left to right direction
+rectangle system{
+admin --> (登录)
+admin --> (用户管理)
+(用户管理) ..> (删除用户) :<<include>>
+(用户管理) ..> (锁定用户) :<<include>>
+(用户管理) ..> (重置用户密码) :<<include>>
+(用户管理) ..> (设置用户VIP级别) :<<include>>
+(用户管理) ..> (查询用户) :<<include>>
+
+admin --> (书籍管理)
+(书籍管理) ..> (添加书籍) : <<include>>
+(书籍管理) ..> (删除书籍) : <<include>>
+(书籍管理) ..> (修改书籍信息) : <<include>>
+(书籍管理) ..> (上架) : <<include>>
+(书籍管理) ..> (下架) : <<include>>
+(书籍管理) ..> (查询书籍) : <<include>>
+
+admin --> (首页管理)
+(首页管理) ..> (轮播图) : <<include>>
+(首页管理) ..> (大家在看) : <<include>>
+(首页管理) ..> (为你推荐) : <<include>>
+(首页管理) ..> (新书速递) : <<include>>
+
+admin --> (chybook数据统计)
+}
+@enduml
+

@@ -4,6 +4,13 @@ spring:
     url: jdbc:mysql://localhost:3306/bookstore?useSSl=false
     username: root
     password: "000000"
+  redis:
+    host: localhost
+    port: 6379
+    session:
+      store-type: redis
+      redis:
+        flush-mode: IMMEDIATE
 chybook:
   upload: # 从数据库查询到的都是相对路径，需要加上配置文件中前缀
     coverImg: "D:\\upload\\coverImg\\"# 图书封面图片上传存放路径
