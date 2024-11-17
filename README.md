@@ -1,34 +1,4 @@
-# booksystem ÏîÄ¿
+# booksystem é¡¹ç›®
 CHY
 
-**ÊÂÏÈÉùÃ÷**£º±¾ÈË±È½Ï²î¾¢£¬Òò´ËÏîÄ¿×öµÃ¿ÉÄÜ±È½ÏÄÑ¿´¡£
-
-×¢ÒâÊÂÏî£º
-1. Õâ¸öÏîÄ¿ÕýÔÚ¿ª·¢ÖÐ£¬ÎÒ½«Ô­À´µÄdemo0ÏîÄ¿¹¹¼þÖÐµÄÒ»Ð©´úÂëÎÄ¼þ¸´ÖÆµ½ÁË±¾ÏîÄ¿ÖÐÁË£¬ÎªÔ­À´µÄdemo0ÏîÄ¿ËùÅäÖÃµÄMySQLÊý¾Ý¿âµÄÃû³ÆÊÇdemo0£¬ÔÚ´ËÊý¾Ý¿âÖÐ£¬
-2. ¶Ô±íÊ¹ÓÃÁËÍâ¼üÔ¼Êø¡£
-3ÎªÁË½â¾öMybatis-Plus²»Ö§³ÖÓµÓÐÁªºÏÖ÷¼üµÄ±íµÄÓ³ÉäÎÊÌâ£¬Ê¹ÓÃÈçÏÂÒÀÀµ£º
-```xml
-<!--        ½â¾öÁªºÏÖ÷¼üÓ³ÉäÎÊÌâ£¬´Ë°æ±¾¼æÈÝmybatis-plus 3.5.5+-->
-<dependency>
-    <groupId>com.github.jeffreyning</groupId>
-    <artifactId>mybatisplus-plus</artifactId>
-    <version>1.7.5-RELEASE</version>
-</dependency>
-```
-È»ºóÔÙÅäÖÃÀà»òSpringBootÆô¶¯ÀàÖÐ±ê×¢ÉÏ×¢½â@EnableMPP£¬ »¹ÒªÔÚ¸ù¾ÝÒªÇóÖØÐÂ±àÐ´dao²ã¡¢service²ã´úÂë£¬ÈçÈÃMapper½Ó¿Ú¼Ì³ÐMPPBaseMapper½Ó¿Ú¡¢
-ÈÃ¶ÔÓ¦µÄService½Ó¿Ú¼Ì³ÐIMppServiceµÈ¡£ÓÐ¹Ømybatisplus-plusµÄÏêÏ¸ÄÚÈÝ£¬²Î¼û
-<a href="https://github.com/jeffreyning/mybatisplus-plus">GitHub-Mabatisplus-Plus</a>¡£
-4. ÎªÁËÊ¹ÓÃLog4j2ÈÕÖ¾¿ò¼Ü£¬Ò»°ã¶¼»áÔÚÏîÄ¿ÖÐÌí¼ÓÈçÏÂÒÀÀµ£º
-```xml
-<dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-api</artifactId>
-            <version>2.13.3</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <version>2.13.3</version>
-        </dependency>
-```
-
+è¿™æ˜¯ä¸€ä¸ªåœ¨çº¿å›¾ä¹¦é˜…è¯»çš„ç³»ç»Ÿï¼Œå®ƒæ­£åœ¨å¼€å‘ä¸­ã€‚
